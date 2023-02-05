@@ -6,57 +6,174 @@
 /* Landing Page */
 
 .landing-container {
-  width: 100%;
-  height: 739px;
-  background-color: rgb(25, 25, 25);
+  width: 1440px;
+  height: 708px;
   display: flex;
-  justify-content: center;
-  align-content: center;
   flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('/public/images/image-hero.jpg');
+  background-size: 100% 100%;
+}
+main {
+  background-color: rgb(25, 25, 25);
+  min-width: 100%;
 }
 .nav-container {
   width: 100%;
   display: flex;
   justify-content: center;
+  padding-top: 25px;
 }
-
 .nav {
-  width: 1109.83px;
-  height: 28px;
-
-  display: flex;
-  justify-content: space-between;
+  border-bottom: 1px solid rgb(48, 48, 48);
+  padding-bottom: 25px;
+}
+.nav-container h1 {
+  padding-right: 200px;
   color: white;
-  align-items: center;
 }
-.nav a {
-  color: white;
-  padding: 1em;
+.nav-container h2 {
+  padding-left: 100px;
 }
-.landing-product {
-  width: 100%;
-  height: 100%;
-  background-color: yellow;
-  display: flex;
-  justify-content: center;
-}
-.product-image {
-  width: 50%;
-  z-index: 1;
-}
-.product-image img {
-  width: 100%;
-  height: 100%;
-}
-.landing-text {
-  background-color: beige;
+.products-container {
+  width: 359px;
+  height: 346px;
 
+  margin-right: 660px;
+  padding-top: 150px;
+}
+
+.product-text {
   width: 398px;
   height: 346px;
 
   display: flex;
+
+  align-items: center;
+
+  position: relative;
+}
+.product-text h1 {
+  font-family: 'Manrope', sans-serif;
+  font-style: Bold;
+  font-size: 3.5rem;
+  line-height: 56px;
+  padding-bottom: 24px;
+  color: white;
+}
+.product-text h2 {
+  font-family: 'Manrope', sans-serif;
+  padding-bottom: 10px;
+  font-size: 0.625rem;
+  letter-spacing: 5.5px;
+  line-height: 19px;
+  color: rgb(140, 140, 140);
+}
+.product-text p {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  padding-bottom: 84px;
+  color: rgb(140, 140, 140);
+  padding-right: 20px;
+}
+.product-text button {
+  width: 160px;
+  height: 48px;
+  color: white;
+  background-color: rgb(216, 125, 74);
+  font-weight: 700;
+  border: none;
+  font-family: 'Manrope', sans-serif;
+}
+
+.nav {
+  width: 1109.83;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav a {
+  padding: 25px;
+
+  font-size: 16px;
+  text-decoration: none;
+  font-family: 'Manrope', sans-serif;
+  font-style: bold;
+
+  color: white;
+}
+@media (max-width: 1440px) {
+  .landing-container {
+    width: 100%;
+  }
+}
+
+/* Products bar */
+
+.product-bar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.products {
+  width: 350px;
+  margin-top: 200px;
+  height: 169px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: 'Manrope', sans-serif;
+  background-color: rgb(241, 241, 241);
+  border-radius: 8px;
+}
+.products-text {
+  display: flex;
+
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  text-align: center;
+}
+.products-text h1 {
+  padding-bottom: 10px;
+}
+
+.products h1 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.products img {
+  width: 150.95px;
+  height: 160px;
+  object-fit: cover;
+  position: relative;
+}
+
+/* ZX9 Speaker */
+
+.zx9-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.zx9-speaker {
+  margin-top: 168px;
+  width: 1110px;
+  height: 560px;
+
+  background-color: rgb(216, 125, 74);
+}
+
+.zx9-speaker img {
+  width: 410.23px;
+  height: 493px;
+  object-fit: cover;
+
+  background-color: rebeccapurple;
 }
