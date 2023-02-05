@@ -38,7 +38,7 @@ export default function Landing() {
       </main>
       <div className="product-bar">
         <div className="products">
-          <img src="/images/shared\desktop/image-category-thumbnail-headphones.png"></img>
+          <img src="/images/shared\desktop/image-category-thumbnail-headphones.PNG"></img>
           <div className="products-text">
             <h1>HEADPHONES</h1>
             <a>SHOP&nbsp;></a>
