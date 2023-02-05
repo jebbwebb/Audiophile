@@ -62,14 +62,16 @@ export default function Landing() {
       <div className="zx9-container">
         <div className="zx9-speaker">
           <img src="\images\product-zx9-speaker\desktop\image-speaker-zx9.png"></img>
-          <h1>
-            ZX9 <br></br>SPEAKER
-          </h1>
-          <p>
-            Upgrade to premium speakers that are phenomenally built to deliver
-            truly remarkable sound.
-          </p>
-          <button>SEE PRODUCT</button>
+          <div className="zx9-text">
+            <h1>
+              ZX9 <br></br>SPEAKER
+            </h1>
+            <p>
+              Upgrade to premium speakers that are phenomenally built to deliver
+              truly remarkable sound.
+            </p>
+            <button>SEE PRODUCT</button>
+          </div>
         </div>
       </div>
     </>

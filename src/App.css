@@ -164,16 +164,57 @@ main {
 }
 .zx9-speaker {
   margin-top: 168px;
-  width: 1110px;
-  height: 560px;
-
+  width: 1072px;
+  height: 593px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/public/images/home/desktop/pattern-circles.svg');
   background-color: rgb(216, 125, 74);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -15rem -9.125rem;
+  border-radius: 8px;
 }
 
 .zx9-speaker img {
   width: 410.23px;
-  height: 493px;
+  height: 497px;
   object-fit: cover;
+  margin-top: 95px;
+  margin-right: 90px;
+  margin-bottom: 0px;
+}
+.zx9-text {
+  width: 368px;
+  height: 497px;
+  display: flex;
+  flex-direction: column;
+  left: 50px;
+  justify-content: center;
 
-  background-color: rebeccapurple;
+  position: relative;
+  font-family: 'Manrope', sans-serif;
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+}
+.zx9-text button {
+  width: 164px;
+  height: 43px;
+  background-color: #000000;
+  color: white;
+}
+.zx9-text h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: white;
+  line-height: 58px;
+  letter-spacing: 2px;
+  padding-bottom: 24px;
+}
+.zx9-text p {
+  padding-bottom: 40px;
+  color: rgb(241, 213, 197);
 }
