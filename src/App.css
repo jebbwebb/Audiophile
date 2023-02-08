@@ -357,7 +357,7 @@ footer {
   height: 0.25rem;
   width: 6.25rem;
   background-color: #d87d4a;
-  top: 3590px;
+  top: 224.375em;
 }
 
 .footer-nav {
@@ -411,4 +411,360 @@ footer {
   margin: 0;
 }
 
-/* Headphone */
+/* Headphones */
+
+/* Headphones NAV */
+.main-container {
+  width: 100%;
+  background-color: #000000;
+}
+.headphone-container {
+  width: 1440px;
+  height: 336px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000000;
+}
+
+.headphone-nav {
+  display: flex;
+  border-bottom: 1px solid white;
+  padding-bottom: 36px;
+  justify-content: space-between;
+  align-items: center;
+  width: 1109px;
+  height: 28px;
+  padding-top: 25px;
+}
+.headphone-container h2 {
+  color: white;
+}
+.headphone-container h1 {
+  color: white;
+}
+.headphone-container h3 {
+  color: white;
+}
+.headphone-container a {
+  padding: 15px;
+
+  font-size: 16px;
+  text-decoration: none;
+  font-family: 'Manrope', sans-serif;
+  font-style: bold;
+
+  color: white;
+}
+.headphone-text {
+  padding-top: 98px;
+  font-size: 30px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 1.43px;
+  display: flex;
+  margin-left: 80px;
+}
+
+/* Headphones Body */
+
+.headphonesproduct-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.headphonesproduct-image {
+  width: 540px;
+  height: 560px;
+  margin-right: 183px;
+}
+
+.headphones-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 160px;
+}
+.headphonesproduct-text {
+  font-family: 'Manrope', sans-serif;
+
+  width: 445px;
+  height: 343px;
+}
+.headphonesproduct-text p {
+  font-size: 15px;
+  line-height: 25px;
+  padding-top: 32px;
+  padding-bottom: 40px;
+}
+.headphonesproduct-text h1 {
+  font-size: 44px;
+  line-height: 44px;
+  letter-spacing: 1.43px;
+}
+.headphonesproduct-text h2 {
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 10px;
+  letter-spacing: 1.43px;
+}
+.headphonesproduct2-image {
+  width: 540px;
+  height: 560px;
+  margin-left: 183px;
+}
+.footer-nav2 {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  width: 1110px;
+  height: 25px;
+  align-items: center;
+  padding-top: 75px;
+}
+
+.footer-nav2::before {
+  content: '';
+  position: absolute;
+  height: 0.25rem;
+  width: 6.25rem;
+  background-color: #d87d4a;
+  top: 240.9em;
+}
+.footer-nav2 a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 2px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  padding-left: 34px;
+}
+
+.footer-nav3 {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  width: 1110px;
+  height: 25px;
+  align-items: center;
+  padding-top: 75px;
+}
+
+.footer-nav3::before {
+  content: '';
+  position: absolute;
+  height: 0.25rem;
+  width: 6.25rem;
+  background-color: #d87d4a;
+  top: 195.8em;
+}
+.footer-nav3 a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 2px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  padding-left: 34px;
+}
+
+.footer-nav4 {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  width: 1110px;
+  height: 25px;
+  align-items: center;
+  padding-top: 75px;
+}
+
+.footer-nav4::before {
+  content: '';
+  position: absolute;
+  height: 0.25rem;
+  width: 6.25rem;
+  background-color: #d87d4a;
+  top: 150.8em;
+}
+.footer-nav4 a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 2px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  padding-left: 34px;
+}
+
+/* Product Pages */
+
+.page-container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000000;
+}
+.page-container a {
+  padding: 15px;
+
+  font-size: 16px;
+  text-decoration: none;
+  font-family: 'Manrope', sans-serif;
+  font-style: bold;
+
+  color: white;
+}
+
+.page-container h2 {
+  color: white;
+}
+.page-container h1 {
+  color: white;
+}
+.page-container h3 {
+  color: white;
+}
+.page-nav {
+  display: flex;
+  font-family: 'Manrope', sans-serif;
+  padding-bottom: 36px;
+  justify-content: space-between;
+  align-items: center;
+  width: 1109px;
+  height: 28px;
+  padding-top: 25px;
+}
+.product-body img {
+  width: 540px;
+  height: 560px;
+}
+.product-page {
+  display: flex;
+  justify-content: center;
+  font-family: 'Manrope', sans-serif;
+}
+.features {
+  width: 635px;
+  height: 318px;
+  margin-top: 160px;
+}
+.features-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-family: 'Manrope', sans-serif;
+}
+.the-box {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 225px;
+  margin-left: 125px;
+  margin-top: 160px;
+  font-family: 'Manrope', sans-serif;
+}
+.page-images {
+  display: flex;
+  justify-content: center;
+}
+.col-image {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.row-image {
+  margin-left: 30px;
+}
+.may-also {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 64px;
+  padding-top: 160px;
+  font-family: 'Manrope', sans-serif;
+}
+.also-container {
+  display: flex;
+  justify-content: center;
+  font-family: 'Manrope', sans-serif;
+}
+.also-bar {
+  display: flex;
+  gap: 30px;
+}
+.also-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.also-product img {
+  width: 350px;
+  height: 316px;
+  padding-bottom: 40px;
+}
+.also-product button {
+  margin-top: 32px;
+}
+.goback-container {
+  display: flex;
+  align-items: flex-end;
+  width: 57px;
+  height: 25px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  position: relative;
+  bottom: 350px;
+  left: 55px;
+  background-color: rebeccapurple;
+}
+button {
+  font-family: 'Manrope', sans-serif;
+  color: white;
+  width: 160px;
+  height: 45px;
+  background-color: #d87d4a;
+  border: none;
+}
+.footer-nav5 {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  width: 1110px;
+  height: 25px;
+  align-items: center;
+  padding-top: 75px;
+}
+
+.footer-nav5::before {
+  content: '';
+  position: absolute;
+  height: 0.25rem;
+  width: 6.25rem;
+  background-color: #d87d4a;
+  top: 249.1em;
+}
+.footer-nav5 a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 2px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  padding-left: 34px;
+}

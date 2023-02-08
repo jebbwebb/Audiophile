@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Headphones() {
+export default function () {
   return (
     <>
       <div className="main-container">
@@ -16,7 +16,7 @@ export default function Headphones() {
             <h3>Cart</h3>
           </div>
           <div className="headphone-text">
-            <h2>HEADPHONES</h2>
+            <h2>SPEAKERS</h2>
           </div>
         </div>
       </div>
@@ -24,18 +24,17 @@ export default function Headphones() {
         <div className="headphones-product">
           <img
             className="headphonesproduct-image"
-            src="images\product-xx99-mark-two-headphones\desktop\image-category-page-preview.jpg"
+            src="images\product-zx9-speaker\desktop\image-category-page-preview.jpg"
           ></img>
 
           <div className="headphonesproduct-text">
             <h2>N E W &nbsp; P R O D U C T</h2>
-            <h1>
-              XX99 MARK II <br></br>HEADPHONES
-            </h1>
+            <h1>ZX9 SPEAKER</h1>
             <p>
-              The new XX99 Mark II headphones is the pinnacle of pristine audio.
-              It redefines your premium headphone experience by reproducing the
-              balanced depth and precision of studio-quality sound.
+              Upgrade your sound system with the all new ZX9 active speaker.
+              It’s a bookshelf speaker system that offers truly wireless
+              connectivity -- creating new possibilities for more pleasing and
+              practical audio setups.
             </p>
             <button>SEE PRODUCT</button>
           </div>
@@ -43,42 +42,21 @@ export default function Headphones() {
         <div className="headphones-product">
           <div className="headphonesproduct-text">
             <h2>N E W &nbsp; P R O D U C T</h2>
-            <h1>
-              XX99 MARK I <br></br>HEADPHONES
-            </h1>
+            <h1>ZX7 SPEAKER</h1>
             <p>
-              As the gold standard for headphones, the classic XX99 Mark I
-              offers detailed and accurate audio reproduction for audiophiles,
-              mixing engineers, and music aficionados alike in studios and on
-              the go.
+              Stream high quality sound wirelessly with minimal to no loss. The
+              ZX7 speaker uses high-end audiophile components that represents
+              the top of the line powered speakers for home or studio use.
             </p>
             <button>SEE PRODUCT</button>
           </div>
 
           <img
             className="headphonesproduct2-image"
-            src="\images\product-xx99-mark-one-headphones\desktop\image-category-page-preview.jpg"
+            src="images\product-zx7-speaker\desktop\image-category-page-preview.jpg"
           ></img>
         </div>
-        <div className="headphones-product">
-          <img
-            className="headphonesproduct-image"
-            src="\images\product-xx59-headphones\desktop\image-category-page-preview.jpg"
-          ></img>
 
-          <div className="headphonesproduct-text">
-            <h2>N E W &nbsp; P R O D U C T</h2>
-            <h1>
-              XX59 <br></br>HEADPHONES
-            </h1>
-            <p>
-              The new XX99 Mark II headphones is the pinnacle of pristine audio.
-              It redefines your premium headphone experience by reproducing the
-              balanced depth and precision of studio-quality sound.
-            </p>
-            <button>SEE PRODUCT</button>
-          </div>
-        </div>
         <div className="product-bar">
           <div className="products">
             <img src="/images/shared\desktop/image-category-thumbnail-headphones.png"></img>
@@ -127,7 +105,7 @@ export default function Headphones() {
       </div>
       <footer>
         <div className="footer-container">
-          <div className="footer-nav2">
+          <div className="footer-nav3">
             <h1>audiophile</h1>
 
             <div class="footer-menu">
