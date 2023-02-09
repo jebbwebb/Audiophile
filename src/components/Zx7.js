@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Xx99() {
+export default function Zx7() {
   return (
     <>
       <div className="main-container">
@@ -21,20 +21,20 @@ export default function Xx99() {
       <div className="headphones-product">
         <img
           className="headphonesproduct-image"
-          src="images\product-xx99-mark-one-headphones\desktop\image-category-page-preview.jpg"
+          src="images\product-zx7-speaker\desktop\image-category-page-preview.jpg"
         ></img>
 
         <div className="headphonesproduct-text">
           <h2>N E W &nbsp; P R O D U C T</h2>
           <h1>
-            XX99 MARK I <br></br>HEADPHONES
+            ZX7 <br></br>SPEAKER
           </h1>
           <p>
-            As the gold standard for headphones, the classic XX99 Mark I offers
-            detailed and accurate audio reproduction for audiophiles, mixing
-            engineers, and music aficionados alike in studios and on the go.
+            Stream high quality sound wirelessly with minimal to no loss. The
+            ZX7 speaker uses high-end audiophile components that represents the
+            top of the line powered speakers for home or studio use.
           </p>
-          <h3>$1,750</h3>
+          <h3>$4,500</h3>
           <button className="quanity">-</button>
           <span>1</span>
           <button className="quanity">+</button>
@@ -45,34 +45,36 @@ export default function Xx99() {
         <div className="features">
           <h1>FEATURES</h1>
           <p>
-            As the headphones all others are measured against, the XX99 Mark I
-            demonstrates over five decades of audio expertise, redefining the
-            critical listening experience. This pair of closed-back headphones
-            are made of industrial, aerospace-grade materials to emphasize
-            durability at a relatively light weight of 11 oz. From the
-            handcrafted microfiber ear cushions to the robust metal headband
-            with inner damping element, the components work together to deliver
-            comfort and uncompromising sound. Its closed-back design delivers up
-            to 27 dB of passive noise cancellation, reducing resonance by
-            reflecting sound to a dedicated absorber. For connectivity, a
-            specially tuned cable is includes with a balanced gold connector.
+            Reap the advantages of a flat diaphragm tweeter cone. This provides
+            a fast response rate and excellent high frequencies that lower
+            tiered bookshelf speakers cannot provide. The woofers are made from
+            aluminum that produces a unique and clear sound. XLR inputs allow
+            you to connect to a mixer for more advanced usage. The ZX7 speaker
+            is the perfect blend of stylish design and high performance. It
+            houses an encased MDF wooden enclosure which minimises acoustic
+            resonance. Dual connectivity allows pairing through bluetooth or
+            traditional optical and RCA input. Switch input sources and control
+            volume at your finger tips with the included wireless remote. This
+            versatile speaker is equipped to deliver an authentic listening
+            experience.
           </p>
         </div>
         <div className="the-box">
           <h1>IN THE BOX</h1>
-          <p>1x Headphone Unit</p>
-          <p>2x Replacement Earcups</p>
-          <p>1x User Manual</p>
-          <p>1x 3.5mm 5m Audio Cable</p>
+          <p>2x &nbsp; Speaker Unit</p>
+          <p>2x &nbsp;Speaker Cloth Panel</p>
+          <p>1x &nbsp;User Manual</p>
+          <p>1x &nbsp;3.5mm 7.5m Audio Cable</p>
+          <p>1x &nbsp; 7.5m Optical Cable</p>
         </div>
       </div>
       <div className="page-images">
         <div className="col-image">
-          <img src="images\product-xx99-mark-one-headphones\desktop\image-gallery-1.jpg"></img>
-          <img src="images\product-xx99-mark-one-headphones\desktop\image-gallery-2.jpg"></img>
+          <img src="images\product-zx7-speaker\desktop\image-gallery-1.jpg"></img>
+          <img src="images\product-zx7-speaker\desktop\image-gallery-2.jpg"></img>
         </div>
         <div className="row-image">
-          <img src="images\product-xx99-mark-one-headphones\desktop\image-gallery-3.jpg"></img>
+          <img src="images\product-zx7-speaker\desktop\image-gallery-3.jpg"></img>
         </div>
       </div>
       <div className="may-also">
@@ -81,18 +83,18 @@ export default function Xx99() {
       <div className="also-container">
         <div className="also-bar">
           <div className="also-product">
-            <img src="images\product-xx99-mark-two-headphones\desktop\image-category-page-preview.jpg"></img>
-            <h1>XX99 Mark II</h1>
+            <img src="images\product-zx9-speaker\desktop\image-category-page-preview.jpg"></img>
+            <h1>ZX9 SPEAKER</h1>
+            <button>SEE PRODUCT</button>
+          </div>
+          <div className="also-product">
+            <img src="images\product-xx99-mark-one-headphones\desktop\image-category-page-preview.jpg"></img>
+            <h1>XX99 MARK I</h1>
             <button>SEE PRODUCT</button>
           </div>
           <div className="also-product">
             <img src="images\product-xx59-headphones\desktop\image-category-page-preview.jpg"></img>
             <h1>XX59</h1>
-            <button>SEE PRODUCT</button>
-          </div>
-          <div className="also-product">
-            <img src="images\product-zx9-speaker\desktop\image-category-page-preview.jpg"></img>
-            <h1>ZX9 SPEAKER</h1>
             <button>SEE PRODUCT</button>
           </div>
         </div>

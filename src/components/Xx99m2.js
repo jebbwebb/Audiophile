@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Xx99() {
+export default function Xx99m2() {
   return (
     <>
       <div className="main-container">
@@ -21,20 +21,20 @@ export default function Xx99() {
       <div className="headphones-product">
         <img
           className="headphonesproduct-image"
-          src="images\product-xx99-mark-one-headphones\desktop\image-category-page-preview.jpg"
+          src="images\product-xx99-mark-two-headphones\desktop\image-category-page-preview.jpg"
         ></img>
 
         <div className="headphonesproduct-text">
           <h2>N E W &nbsp; P R O D U C T</h2>
           <h1>
-            XX99 MARK I <br></br>HEADPHONES
+            XX99 MARK II <br></br>HEADPHONES
           </h1>
           <p>
-            As the gold standard for headphones, the classic XX99 Mark I offers
-            detailed and accurate audio reproduction for audiophiles, mixing
-            engineers, and music aficionados alike in studios and on the go.
+            The new XX99 Mark II headphones is the pinnacle of pristine audio.
+            It redefines your premium headphone experience by reproducing the
+            balanced depth and precision of studio-quality sound.
           </p>
-          <h3>$1,750</h3>
+          <h3>$2,999</h3>
           <button className="quanity">-</button>
           <span>1</span>
           <button className="quanity">+</button>
@@ -45,34 +45,36 @@ export default function Xx99() {
         <div className="features">
           <h1>FEATURES</h1>
           <p>
-            As the headphones all others are measured against, the XX99 Mark I
-            demonstrates over five decades of audio expertise, redefining the
-            critical listening experience. This pair of closed-back headphones
-            are made of industrial, aerospace-grade materials to emphasize
-            durability at a relatively light weight of 11 oz. From the
-            handcrafted microfiber ear cushions to the robust metal headband
-            with inner damping element, the components work together to deliver
-            comfort and uncompromising sound. Its closed-back design delivers up
-            to 27 dB of passive noise cancellation, reducing resonance by
-            reflecting sound to a dedicated absorber. For connectivity, a
-            specially tuned cable is includes with a balanced gold connector.
+            Featuring a genuine leather head strap and premium earcups, these
+            headphones deliver superior comfort for those who like to enjoy
+            endless listening. It includes intuitive controls designed for any
+            situation. Whether you’re taking a business call or just in your own
+            personal space, the auto on/off and pause features ensure that
+            you’ll never miss a beat. The advanced Active Noise Cancellation
+            with built-in equalizer allow you to experience your audio world on
+            your terms. It lets you enjoy your audio in peace, but quickly
+            interact with your surroundings when you need to. Combined with
+            Bluetooth 5. 0 compliant connectivity and 17 hour battery life, the
+            XX99 Mark II headphones gives you superior sound, cutting-edge
+            technology, and a modern design aesthetic.
           </p>
         </div>
         <div className="the-box">
           <h1>IN THE BOX</h1>
-          <p>1x Headphone Unit</p>
-          <p>2x Replacement Earcups</p>
-          <p>1x User Manual</p>
-          <p>1x 3.5mm 5m Audio Cable</p>
+          <p>1x &nbsp; Headphone Unit</p>
+          <p>2x &nbsp;Replacement Earcups</p>
+          <p>1x &nbsp;User Manual</p>
+          <p>1x &nbsp;3.5mm 5m Audio Cable</p>
+          <p>1x &nbsp;Travel Bag</p>
         </div>
       </div>
       <div className="page-images">
         <div className="col-image">
-          <img src="images\product-xx99-mark-one-headphones\desktop\image-gallery-1.jpg"></img>
-          <img src="images\product-xx99-mark-one-headphones\desktop\image-gallery-2.jpg"></img>
+          <img src="images\product-xx99-mark-two-headphones\desktop\image-gallery-1.jpg"></img>
+          <img src="images\product-xx99-mark-two-headphones\desktop\image-gallery-2.jpg"></img>
         </div>
         <div className="row-image">
-          <img src="images\product-xx99-mark-one-headphones\desktop\image-gallery-3.jpg"></img>
+          <img src="images\product-xx99-mark-two-headphones\desktop\image-gallery-3.jpg"></img>
         </div>
       </div>
       <div className="may-also">
@@ -81,8 +83,8 @@ export default function Xx99() {
       <div className="also-container">
         <div className="also-bar">
           <div className="also-product">
-            <img src="images\product-xx99-mark-two-headphones\desktop\image-category-page-preview.jpg"></img>
-            <h1>XX99 Mark II</h1>
+            <img src="images\product-xx99-mark-one-headphones\desktop\image-category-page-preview.jpg"></img>
+            <h1>XX99 Mark I</h1>
             <button>SEE PRODUCT</button>
           </div>
           <div className="also-product">

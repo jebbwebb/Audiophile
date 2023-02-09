@@ -661,12 +661,45 @@ footer {
   width: 635px;
   height: 318px;
   margin-top: 160px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  padding-bottom: 160px;
+}
+.features h1 {
+  padding-bottom: 32px;
+}
+.features p {
+  color: rgb(157, 159, 153);
 }
 .features-container {
   display: flex;
   justify-content: center;
   width: 100%;
   font-family: 'Manrope', sans-serif;
+}
+.headphonesproduct-text h2 {
+  color: #d87d4a;
+}
+.quanity {
+  background-color: rgb(241, 241, 241);
+  width: 50px;
+  color: #000000;
+}
+.quanity-container span {
+  color: #000000;
+}
+.quanity-container {
+  background-color: rgb(241, 241, 241);
+  width: 120px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-container {
+  display: flex;
+  gap: 16px;
 }
 .the-box {
   display: flex;
@@ -676,6 +709,12 @@ footer {
   margin-left: 125px;
   margin-top: 160px;
   font-family: 'Manrope', sans-serif;
+}
+.the-box h1 {
+  padding-bottom: 32px;
+}
+.the-box p {
+  padding-bottom: 8px;
 }
 .page-images {
   display: flex;
@@ -756,7 +795,7 @@ button {
   height: 0.25rem;
   width: 6.25rem;
   background-color: #d87d4a;
-  top: 249.1em;
+  top: 259.1em;
 }
 .footer-nav5 a {
   text-decoration: none;
@@ -767,4 +806,7 @@ button {
   font-family: 'Manrope', sans-serif;
   font-weight: 700;
   padding-left: 34px;
+}
+span {
+  color: #d87d4a;
 }

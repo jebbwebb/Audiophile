@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Xx99() {
+export default function Yx1() {
   return (
     <>
       <div className="main-container">
@@ -21,58 +21,75 @@ export default function Xx99() {
       <div className="headphones-product">
         <img
           className="headphonesproduct-image"
-          src="images\product-xx99-mark-one-headphones\desktop\image-category-page-preview.jpg"
+          src="images\product-xx99-mark-two-headphones\desktop\image-category-page-preview.jpg"
         ></img>
 
         <div className="headphonesproduct-text">
           <h2>N E W &nbsp; P R O D U C T</h2>
           <h1>
-            XX99 MARK I <br></br>HEADPHONES
+            YX1 WIRELESS <br></br>HEADPHONES
           </h1>
           <p>
-            As the gold standard for headphones, the classic XX99 Mark I offers
-            detailed and accurate audio reproduction for audiophiles, mixing
-            engineers, and music aficionados alike in studios and on the go.
+            Tailor your listening experience with bespoke dynamic drivers from
+            the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound
+            even in noisy environments with its active noise cancellation
+            feature.
           </p>
-          <h3>$1,750</h3>
-          <button className="quanity">-</button>
-          <span>1</span>
-          <button className="quanity">+</button>
-          <button>ADD TO CART</button>
+          <h3>$599</h3>
+          <div className="button-container">
+            <div className="quanity-container">
+              <button className="quanity">-</button>
+              <span>1</span>
+              <button className="quanity">+</button>
+            </div>
+            <button>ADD TO CART</button>
+          </div>
         </div>
       </div>
       <div className="features-container">
         <div className="features">
           <h1>FEATURES</h1>
           <p>
-            As the headphones all others are measured against, the XX99 Mark I
-            demonstrates over five decades of audio expertise, redefining the
-            critical listening experience. This pair of closed-back headphones
-            are made of industrial, aerospace-grade materials to emphasize
-            durability at a relatively light weight of 11 oz. From the
-            handcrafted microfiber ear cushions to the robust metal headband
-            with inner damping element, the components work together to deliver
-            comfort and uncompromising sound. Its closed-back design delivers up
-            to 27 dB of passive noise cancellation, reducing resonance by
-            reflecting sound to a dedicated absorber. For connectivity, a
-            specially tuned cable is includes with a balanced gold connector.
+            Experience unrivalled stereo sound thanks to innovative acoustic
+            technology. With improved ergonomics designed for full day wearing,
+            these revolutionary earphones have been finely crafted to provide
+            you with the perfect fit, delivering complete comfort all day long
+            while enjoying exceptional noise isolation and truly immersive
+            sound. The YX1 Wireless Earphones features customizable controls for
+            volume, music, calls, and voice assistants built into both earbuds.
+            The new 7-hour battery life can be extended up to 28 hours with the
+            charging case, giving you uninterrupted play time. Exquisite
+            craftsmanship with a splash resistant design now available in an all
+            new white and grey color scheme as well as the popular classic
+            black.
           </p>
         </div>
         <div className="the-box">
           <h1>IN THE BOX</h1>
-          <p>1x Headphone Unit</p>
-          <p>2x Replacement Earcups</p>
-          <p>1x User Manual</p>
-          <p>1x 3.5mm 5m Audio Cable</p>
+          <p>
+            <span>2x</span> &nbsp; Earphone Unit
+          </p>
+          <p>
+            <span>6x</span> &nbsp;Multi-Size Earplugs
+          </p>
+          <p>
+            <span>1x</span> &nbsp;User Manual
+          </p>
+          <p>
+            <span>1x</span> &nbsp;USB-C Charging Cable
+          </p>
+          <p>
+            <span>1x</span> &nbsp;Travel Pouch
+          </p>
         </div>
       </div>
       <div className="page-images">
         <div className="col-image">
-          <img src="images\product-xx99-mark-one-headphones\desktop\image-gallery-1.jpg"></img>
-          <img src="images\product-xx99-mark-one-headphones\desktop\image-gallery-2.jpg"></img>
+          <img src="images\product-yx1-earphones\desktop\image-gallery-1.jpg"></img>
+          <img src="images\product-yx1-earphones\desktop\image-gallery-2.jpg"></img>
         </div>
         <div className="row-image">
-          <img src="images\product-xx99-mark-one-headphones\desktop\image-gallery-3.jpg"></img>
+          <img src="images\product-yx1-earphones\desktop\image-gallery-3.jpg"></img>
         </div>
       </div>
       <div className="may-also">
@@ -81,8 +98,8 @@ export default function Xx99() {
       <div className="also-container">
         <div className="also-bar">
           <div className="also-product">
-            <img src="images\product-xx99-mark-two-headphones\desktop\image-category-page-preview.jpg"></img>
-            <h1>XX99 Mark II</h1>
+            <img src="images\product-xx99-mark-one-headphones\desktop\image-category-page-preview.jpg"></img>
+            <h1>XX99 Mark I</h1>
             <button>SEE PRODUCT</button>
           </div>
           <div className="also-product">
