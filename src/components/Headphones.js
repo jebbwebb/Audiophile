@@ -1,6 +1,19 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function Headphones() {
+  const navigate = useNavigate();
+
+  const handleXx99 = () => {
+    navigate('/xx99');
+  };
+  const handleXx99m2 = () => {
+    navigate('/xx99m2');
+  };
+  const handleXx59 = () => {
+    navigate('/Xx59');
+  };
   return (
     <>
       <div className="main-container">
@@ -8,10 +21,18 @@ export default function Headphones() {
           <div className="headphone-nav">
             <h1>audiophile</h1>
             <div class="headphone-menu">
-              <a href=" ">HOME</a>
-              <a href="">HEADPHONES</a>
-              <a href=" ">SPEAKERS</a>
-              <a href="">EARPHONES</a>
+              <a>
+                <Link to="/home">HOME</Link>
+              </a>
+              <a>
+                <Link to="/headphones">HEADPHONES</Link>
+              </a>
+              <a href=" ">
+                <Link to="/speakers">SPEAKERS</Link>
+              </a>
+              <a>
+                <Link to="/earphones">EARPHONES</Link>
+              </a>
             </div>
             <h3>Cart</h3>
           </div>
@@ -37,7 +58,7 @@ export default function Headphones() {
               It redefines your premium headphone experience by reproducing the
               balanced depth and precision of studio-quality sound.
             </p>
-            <button>SEE PRODUCT</button>
+            <button onClick={handleXx99m2}>SEE PRODUCT</button>
           </div>
         </div>
         <div className="headphones-product">
@@ -52,7 +73,7 @@ export default function Headphones() {
               mixing engineers, and music aficionados alike in studios and on
               the go.
             </p>
-            <button>SEE PRODUCT</button>
+            <button onClick={handleXx99}>SEE PRODUCT</button>
           </div>
 
           <img
@@ -76,7 +97,7 @@ export default function Headphones() {
               It redefines your premium headphone experience by reproducing the
               balanced depth and precision of studio-quality sound.
             </p>
-            <button>SEE PRODUCT</button>
+            <button onClick={handleXx59}>SEE PRODUCT</button>
           </div>
         </div>
         <div className="product-bar">

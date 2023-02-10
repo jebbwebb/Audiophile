@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Landing() {
   return (
@@ -10,10 +11,18 @@ export default function Landing() {
               <h1>audiophile</h1>
 
               <div class="menu">
-                <a href=" ">HOME</a>
-                <a href="">HEADPHONES</a>
-                <a href=" ">SPEAKERS</a>
-                <a href="">EARPHONES</a>
+                <a>
+                  <Link to="/home">HOME</Link>
+                </a>
+                <a>
+                  <Link to="/headphones">HEADPHONES</Link>
+                </a>
+                <a href=" ">
+                  <Link to="/speakers">SPEAKERS</Link>
+                </a>
+                <a>
+                  <Link to="/earphones">EARPHONES</Link>
+                </a>
               </div>
 
               <h2>Cart</h2>

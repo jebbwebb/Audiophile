@@ -1,6 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function Earphones() {
+  const navigate = useNavigate();
+
+  const handleYx1 = () => {
+    navigate('/yx1');
+  };
   return (
     <>
       <div className="main-container">
@@ -8,10 +15,18 @@ export default function Earphones() {
           <div className="headphone-nav">
             <h1>audiophile</h1>
             <div class="headphone-menu">
-              <a href=" ">HOME</a>
-              <a href="">HEADPHONES</a>
-              <a href=" ">SPEAKERS</a>
-              <a href="">EARPHONES</a>
+              <a>
+                <Link to="/home">HOME</Link>
+              </a>
+              <a>
+                <Link to="/headphones">HEADPHONES</Link>
+              </a>
+              <a href=" ">
+                <Link to="/speakers">SPEAKERS</Link>
+              </a>
+              <a>
+                <Link to="/earphones">EARPHONES</Link>
+              </a>
             </div>
             <h3>Cart</h3>
           </div>
@@ -38,7 +53,7 @@ export default function Earphones() {
               sound even in noisy environments with its active noise
               cancellation feature.
             </p>
-            <button>SEE PRODUCT</button>
+            <button onClick={handleYx1}>SEE PRODUCT</button>
           </div>
         </div>
 

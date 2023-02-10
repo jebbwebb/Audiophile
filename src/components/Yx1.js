@@ -42,7 +42,7 @@ export default function Yx1() {
               <span>1</span>
               <button className="quanity">+</button>
             </div>
-            <button>ADD TO CART</button>
+            <button name="">ADD TO CART</button>
           </div>
         </div>
       </div>

@@ -1,6 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export default function () {
+  const navigate = useNavigate();
+
+  const handleZx9 = () => {
+    navigate('/zx9');
+  };
+  const handleZx7 = () => {
+    navigate('/zx7');
+  };
   return (
     <>
       <div className="main-container">
@@ -8,10 +18,18 @@ export default function () {
           <div className="headphone-nav">
             <h1>audiophile</h1>
             <div class="headphone-menu">
-              <a href=" ">HOME</a>
-              <a href="">HEADPHONES</a>
-              <a href=" ">SPEAKERS</a>
-              <a href="">EARPHONES</a>
+              <a>
+                <Link to="/home">HOME</Link>
+              </a>
+              <a>
+                <Link to="/headphones">HEADPHONES</Link>
+              </a>
+              <a href=" ">
+                <Link to="/speakers">SPEAKERS</Link>
+              </a>
+              <a>
+                <Link to="/earphones">EARPHONES</Link>
+              </a>
             </div>
             <h3>Cart</h3>
           </div>
@@ -36,19 +54,18 @@ export default function () {
               connectivity -- creating new possibilities for more pleasing and
               practical audio setups.
             </p>
-            <button>SEE PRODUCT</button>
+            <button onClick={handleZx9}>SEE PRODUCT</button>
           </div>
         </div>
         <div className="headphones-product">
           <div className="headphonesproduct-text">
-            <h2>N E W &nbsp; P R O D U C T</h2>
             <h1>ZX7 SPEAKER</h1>
             <p>
               Stream high quality sound wirelessly with minimal to no loss. The
               ZX7 speaker uses high-end audiophile components that represents
               the top of the line powered speakers for home or studio use.
             </p>
-            <button>SEE PRODUCT</button>
+            <button onClick={handleZx7}>SEE PRODUCT</button>
           </div>
 
           <img
