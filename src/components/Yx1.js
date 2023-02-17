@@ -1,6 +1,34 @@
 import React from 'react';
+import { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import { addItem, updateQuanity, lowerQuanity } from './counter';
+import { Link } from 'react-router-dom';
+export default function Yx1(productData) {
+  const dispatch = useDispatch();
+  const cartItems = useSelector((state) => state.counter.items);
+  const cartId = useSelector((state) => state.counter.items[0]);
+  console.log(cartItems);
+  const handleAddItem = () => {
+    console.log('yo');
+    dispatch(
+      addItem({
+        id: productData.productData.id,
+        img: productData.productData.image.mobile,
+        price: productData.productData.price,
+        name: productData.productData.name,
+        quantity: 1,
+      })
+    );
+  };
 
-export default function Yx1() {
+  const handleUpdateQuantity = (id) => {
+    dispatch(updateQuanity({ id }));
+  };
+  const handleLowerQuantity = (id) => {
+    dispatch(lowerQuanity({ id }));
+  };
+
   return (
     <>
       <div className="main-container">
@@ -13,7 +41,9 @@ export default function Yx1() {
               <a href=" ">SPEAKERS</a>
               <a href="">EARPHONES</a>
             </div>
-            <h3>Cart</h3>
+            <a>
+              <Link to="/shoppingcart">cart</Link>
+            </a>
           </div>
         </div>
       </div>
@@ -38,11 +68,22 @@ export default function Yx1() {
           <h3>$599</h3>
           <div className="button-container">
             <div className="quanity-container">
-              <button className="quanity">-</button>
+              <button
+                onClick={() => handleLowerQuantity(cartId.id)}
+                className="quanity"
+              >
+                -
+              </button>
               <span>1</span>
-              <button className="quanity">+</button>
+              <button
+                onClick={() => handleUpdateQuantity(cartId.id)}
+                className="quanity"
+              >
+                +
+              </button>
             </div>
-            <button name="">ADD TO CART</button>
+
+            <button onClick={handleAddItem}>ADD TO CART</button>
           </div>
         </div>
       </div>
