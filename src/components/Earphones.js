@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import Navbar from './Navbar';
 
 export default function Earphones() {
   const navigate = useNavigate();
@@ -12,24 +13,7 @@ export default function Earphones() {
     <>
       <div className="main-container">
         <div className="headphone-container">
-          <div className="headphone-nav">
-            <h1>audiophile</h1>
-            <div class="headphone-menu">
-              <a>
-                <Link to="/home">HOME</Link>
-              </a>
-              <a>
-                <Link to="/headphones">HEADPHONES</Link>
-              </a>
-              <a href=" ">
-                <Link to="/speakers">SPEAKERS</Link>
-              </a>
-              <a>
-                <Link to="/earphones">EARPHONES</Link>
-              </a>
-            </div>
-            <h3>Cart</h3>
-          </div>
+          <Navbar></Navbar>
           <div className="headphone-text">
             <h2>EARPHONES</h2>
           </div>
@@ -62,14 +46,18 @@ export default function Earphones() {
             <img src="/images/shared\desktop/image-category-thumbnail-headphones.png"></img>
             <div className="products-text">
               <h1>HEADPHONES</h1>
-              <a>SHOP&nbsp;></a>
+              <a>
+                <Link to="/headphones">SHOP&nbsp;></Link>
+              </a>
             </div>
           </div>
           <div className="products">
             <div className="products-text">
               <img src="/images\shared/desktop/image-category-thumbnail-speakers.png"></img>
               <h1>SPEAKERS</h1>
-              <a>SHOP&nbsp;></a>
+              <a>
+                <Link to="/speakers">SHOP&nbsp;></Link>
+              </a>
             </div>
           </div>
           <div className="products">
@@ -79,7 +67,10 @@ export default function Earphones() {
                 alt=""
               ></img>
               <h1>EARPHONES</h1>
-              <a>SHOP&nbsp;></a>
+
+              <a>
+                <Link to="/earphones">SHOP&nbsp;></Link>
+              </a>
             </div>
           </div>
         </div>

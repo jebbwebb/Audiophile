@@ -19,13 +19,20 @@ export const counterSlice = createSlice({
       }
     },
     updateQuanity: (state, action) => {
+      const { id, price } = action.payload;
+
       const item = state.items.find((item) => item.id === action.payload.id);
       item.quantity++;
-      item.price += item.price;
+      const total = price * item.quantity;
+      item.price = total;
     },
     lowerQuanity: (state, action) => {
+      const { id, price } = action.payload;
+
       const item = state.items.find((item) => item.id === action.payload.id);
       item.quantity--;
+      const total = price * item.quantity;
+      item.price = total;
       if (item.quantity <= 0) {
         const index = state.items.findIndex(
           (item) => item.id === action.payload

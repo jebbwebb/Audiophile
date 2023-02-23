@@ -1,20 +1,49 @@
 import React from 'react';
+import { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import { addItem, updateQuanity, lowerQuanity } from './counter';
+import { Link } from 'react-router-dom';
+import Navbar from './Navbar';
 
-export default function Xx99() {
+export default function Xx99(productData) {
+  const navigate = useNavigate();
+  const handleZx9 = () => {
+    navigate('/zx9');
+  };
+  const handleXx99m2 = () => {
+    navigate('/xx99m2');
+  };
+  const handleXx59 = () => {
+    navigate('/xx59');
+  };
+  const dispatch = useDispatch();
+  const cartItems = useSelector((state) => state.counter.items);
+  const cartId = useSelector((state) => state.counter.items[0]);
+
+  const handleAddItem = () => {
+    dispatch(
+      addItem({
+        id: productData.productData.id,
+        img: productData.productData.image.mobile,
+        price: productData.productData.price,
+        name: productData.productData.others[0].name,
+        quantity: 1,
+      })
+    );
+  };
+
+  const handleUpdateQuantity = (id, price) => {
+    dispatch(updateQuanity({ id, price }));
+  };
+  const handleLowerQuantity = (id, price) => {
+    dispatch(lowerQuanity({ id, price }));
+  };
   return (
     <>
       <div className="main-container">
         <div className="page-container">
-          <div className="page-nav">
-            <h1>audiophile</h1>
-            <div class="page-menu">
-              <a href=" ">HOME</a>
-              <a href="">HEADPHONES</a>
-              <a href=" ">SPEAKERS</a>
-              <a href="">EARPHONES</a>
-            </div>
-            <h3>Cart</h3>
-          </div>
+          <Navbar></Navbar>
         </div>
       </div>
 
@@ -35,10 +64,29 @@ export default function Xx99() {
             engineers, and music aficionados alike in studios and on the go.
           </p>
           <h3>$1,750</h3>
-          <button className="quanity">-</button>
-          <span>1</span>
-          <button className="quanity">+</button>
-          <button>ADD TO CART</button>
+          <div className="button-container">
+            <div className="quanity-container">
+              <button
+                onClick={() =>
+                  handleLowerQuantity(3, productData.productData.price)
+                }
+                className="quanity"
+              >
+                -
+              </button>
+              <span>1</span>
+              <button
+                onClick={() =>
+                  handleUpdateQuantity(3, productData.productData.price)
+                }
+                className="quanity"
+              >
+                +
+              </button>
+            </div>
+
+            <button onClick={handleAddItem}>ADD TO CART</button>
+          </div>
         </div>
       </div>
       <div className="features-container">
@@ -83,17 +131,17 @@ export default function Xx99() {
           <div className="also-product">
             <img src="images\product-xx99-mark-two-headphones\desktop\image-category-page-preview.jpg"></img>
             <h1>XX99 Mark II</h1>
-            <button>SEE PRODUCT</button>
+            <button onClick={handleXx99m2}>SEE PRODUCT</button>
           </div>
           <div className="also-product">
             <img src="images\product-xx59-headphones\desktop\image-category-page-preview.jpg"></img>
             <h1>XX59</h1>
-            <button>SEE PRODUCT</button>
+            <button onClick={handleXx59}>SEE PRODUCT</button>
           </div>
           <div className="also-product">
             <img src="images\product-zx9-speaker\desktop\image-category-page-preview.jpg"></img>
             <h1>ZX9 SPEAKER</h1>
-            <button>SEE PRODUCT</button>
+            <button onClick={handleZx9}>SEE PRODUCT</button>
           </div>
         </div>
       </div>
@@ -103,14 +151,18 @@ export default function Xx99() {
           <img src="/images/shared\desktop/image-category-thumbnail-headphones.png"></img>
           <div className="products-text">
             <h1>HEADPHONES</h1>
-            <a>SHOP&nbsp;></a>
+            <a>
+              <Link to="/headphones">SHOP&nbsp;></Link>
+            </a>
           </div>
         </div>
         <div className="products">
           <div className="products-text">
             <img src="/images\shared/desktop/image-category-thumbnail-speakers.png"></img>
             <h1>SPEAKERS</h1>
-            <a>SHOP&nbsp;></a>
+            <a>
+              <Link to="/speakers">SHOP&nbsp;></Link>
+            </a>
           </div>
         </div>
         <div className="products">
@@ -120,7 +172,10 @@ export default function Xx99() {
               alt=""
             ></img>
             <h1>EARPHONES</h1>
-            <a>SHOP&nbsp;></a>
+
+            <a>
+              <Link to="/earphones">SHOP&nbsp;></Link>
+            </a>
           </div>
         </div>
       </div>

@@ -4,13 +4,23 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { addItem, updateQuanity, lowerQuanity } from './counter';
 import { Link } from 'react-router-dom';
+import Navbar from './Navbar';
 export default function Yx1(productData) {
+  const navigate = useNavigate();
+  const handleZx9 = () => {
+    navigate('/zx9');
+  };
+  const handleXx99 = () => {
+    navigate('/xx99');
+  };
+  const handleXx59 = () => {
+    navigate('/xx59');
+  };
   const dispatch = useDispatch();
   const cartItems = useSelector((state) => state.counter.items);
   const cartId = useSelector((state) => state.counter.items[0]);
-  console.log(cartItems);
+
   const handleAddItem = () => {
-    console.log('yo');
     dispatch(
       addItem({
         id: productData.productData.id,
@@ -22,29 +32,18 @@ export default function Yx1(productData) {
     );
   };
 
-  const handleUpdateQuantity = (id) => {
-    dispatch(updateQuanity({ id }));
+  const handleUpdateQuantity = (id, price) => {
+    dispatch(updateQuanity({ id, price }));
   };
-  const handleLowerQuantity = (id) => {
-    dispatch(lowerQuanity({ id }));
+  const handleLowerQuantity = (id, price) => {
+    dispatch(lowerQuanity({ id, price }));
   };
 
   return (
     <>
       <div className="main-container">
         <div className="page-container">
-          <div className="page-nav">
-            <h1>audiophile</h1>
-            <div class="page-menu">
-              <a href=" ">HOME</a>
-              <a href="">HEADPHONES</a>
-              <a href=" ">SPEAKERS</a>
-              <a href="">EARPHONES</a>
-            </div>
-            <a>
-              <Link to="/shoppingcart">cart</Link>
-            </a>
-          </div>
+          <Navbar></Navbar>
         </div>
       </div>
 
@@ -69,14 +68,18 @@ export default function Yx1(productData) {
           <div className="button-container">
             <div className="quanity-container">
               <button
-                onClick={() => handleLowerQuantity(cartId.id)}
+                onClick={() =>
+                  handleLowerQuantity(1, productData.productData.price)
+                }
                 className="quanity"
               >
                 -
               </button>
               <span>1</span>
               <button
-                onClick={() => handleUpdateQuantity(cartId.id)}
+                onClick={() =>
+                  handleUpdateQuantity(1, productData.productData.price)
+                }
                 className="quanity"
               >
                 +
@@ -141,17 +144,17 @@ export default function Yx1(productData) {
           <div className="also-product">
             <img src="images\product-xx99-mark-one-headphones\desktop\image-category-page-preview.jpg"></img>
             <h1>XX99 Mark I</h1>
-            <button>SEE PRODUCT</button>
+            <button onClick={handleXx99}>SEE PRODUCT</button>
           </div>
           <div className="also-product">
             <img src="images\product-xx59-headphones\desktop\image-category-page-preview.jpg"></img>
             <h1>XX59</h1>
-            <button>SEE PRODUCT</button>
+            <button onClick={handleXx59}>SEE PRODUCT</button>
           </div>
           <div className="also-product">
             <img src="images\product-zx9-speaker\desktop\image-category-page-preview.jpg"></img>
             <h1>ZX9 SPEAKER</h1>
-            <button>SEE PRODUCT</button>
+            <button onClick={handleZx9}>SEE PRODUCT</button>
           </div>
         </div>
       </div>
@@ -161,14 +164,18 @@ export default function Yx1(productData) {
           <img src="/images/shared\desktop/image-category-thumbnail-headphones.png"></img>
           <div className="products-text">
             <h1>HEADPHONES</h1>
-            <a>SHOP&nbsp;></a>
+            <a>
+              <Link to="/headphones">SHOP&nbsp;></Link>
+            </a>
           </div>
         </div>
         <div className="products">
           <div className="products-text">
             <img src="/images\shared/desktop/image-category-thumbnail-speakers.png"></img>
             <h1>SPEAKERS</h1>
-            <a>SHOP&nbsp;></a>
+            <a>
+              <Link to="/speakers">SHOP&nbsp;></Link>
+            </a>
           </div>
         </div>
         <div className="products">
@@ -178,7 +185,10 @@ export default function Yx1(productData) {
               alt=""
             ></img>
             <h1>EARPHONES</h1>
-            <a>SHOP&nbsp;></a>
+
+            <a>
+              <Link to="/earphones">SHOP&nbsp;></Link>
+            </a>
           </div>
         </div>
       </div>

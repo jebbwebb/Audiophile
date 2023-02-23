@@ -1,33 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Navbar from './Navbar';
 
 export default function Landing() {
   return (
     <>
       <main>
+        <Navbar></Navbar>
         <div className="landing-container">
-          <div className="nav-container">
-            <div className="nav">
-              <h1>audiophile</h1>
-
-              <div class="menu">
-                <a>
-                  <Link to="/home">HOME</Link>
-                </a>
-                <a>
-                  <Link to="/headphones">HEADPHONES</Link>
-                </a>
-                <a href=" ">
-                  <Link to="/speakers">SPEAKERS</Link>
-                </a>
-                <a>
-                  <Link to="/earphones">EARPHONES</Link>
-                </a>
-              </div>
-
-              <h2>Cart</h2>
-            </div>
-          </div>
           <div className="products-container">
             <div className="product-text">
               <div className="text">

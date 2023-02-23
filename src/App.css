@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0;
 }
+body {
+  height: 100%;
+}
 
 /* Landing Page */
 
@@ -809,4 +812,116 @@ button {
 }
 span {
   color: #d87d4a;
+}
+/* Shopping Cart */
+.cart-container {
+  position: relative;
+  display: flex;
+  z-index: 1000;
+  align-items: center;
+  flex-direction: column;
+  width: 377px;
+  min-height: 300px;
+  position: fixed;
+  top: 10%;
+  right: 10%;
+  background-color: white;
+  border-radius: 10px;
+}
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  width: 317px;
+  margin-top: 27px;
+  align-items: center;
+}
+.top-bar h1 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #000000;
+}
+.top-bar button {
+  width: 76px;
+  background-color: transparent;
+  color: #d87d4a;
+}
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  width: 317px;
+  align-items: center;
+}
+.cart-total h1 {
+  color: #000000;
+}
+.cart-total h2 {
+  color: #000000;
+}
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
+  align-items: center;
+  width: 317px;
+}
+.cart-details {
+  display: flex;
+
+  align-items: center;
+}
+.cart-text {
+  padding-left: 16px;
+}
+.cart-item h1 {
+  font-size: 15px;
+  color: black;
+}
+.cart-item img {
+  width: 64px;
+  height: 64px;
+  border-radius: 10px;
+}
+.cart-item button {
+  width: 16px;
+  height: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgb(241, 241, 241);
+  color: #000000;
+}
+.cart-item h3 {
+  color: #000000;
+}
+.cart-quanity {
+  background-color: rgb(241, 241, 241);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 98px;
+  height: 32px;
+}
+.cart-section {
+  padding-bottom: 32px;
+}
+.empty-cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+  align-items: center;
+}
+.empty-cart h1 {
+  color: #000000;
+}
+.empty-cart img {
+  width: 100px;
+  padding-top: 25px;
+
+  color: #000000;
+  filter: invert(0.75);
+}
+.cart-button {
+  background-color: transparent;
 }
