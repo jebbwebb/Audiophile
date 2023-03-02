@@ -7,13 +7,6 @@ import Shoppingcart from './Shoppingcart';
 import Emptycart from './Emptycart';
 
 export default function Navbar() {
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
-  });
   const [isOpen, setIsOpen] = useState(false);
   const cartItems = useSelector((state) => state.counter.items);
   let menuRef = useRef();
@@ -39,11 +32,13 @@ export default function Navbar() {
               <a>
                 <Link to="/earphones">EARPHONES</Link>
               </a>
+              <a>
+                <Link to="/cart">EARPHONES</Link>
+              </a>
+              <button className="cart-button" onClick={() => setIsOpen(true)}>
+                <img src="/images/shared/desktop/icon-cart.svg"></img>
+              </button>
             </div>
-
-            <button className="cart-button" onClick={() => setIsOpen(true)}>
-              <img src="/images/shared/desktop/icon-cart.svg"></img>
-            </button>
           </div>
         </div>
       </div>

@@ -75,13 +75,26 @@ export default function Landing() {
             <h1>ZX7 SPEAKER</h1>
             <button>SEE PRODUCT</button>
           </div>
-
-          <img src="\images\home\desktop\image-speaker-zx7.jpg"></img>
+          <img
+            className="tablet-zx7"
+            src="\images\home\tablet\image-speaker-zx7.jpg"
+          ></img>
+          <img
+            className="desktop-zx7"
+            src="\images\home\desktop\image-speaker-zx7.jpg"
+          ></img>
+          <img
+            className="mobile-zx7"
+            src="\images\home\mobile\image-speaker-zx7.jpg"
+          ></img>
         </div>
       </div>
       <div className="yx1-containter">
         <div className="yx1-image">
-          <img src="\images\home\desktop\image-earphones-yx1.jpg"></img>
+          <img
+            className="yx1-desktop"
+            src="\images\home\desktop\image-earphones-yx1.jpg"
+          ></img>
         </div>
         <div className="yx1-text">
           <h1>YX1 EARPHONES</h1>
@@ -103,7 +116,18 @@ export default function Landing() {
           </p>
         </div>
         <div className="about-image">
-          <img src="\images\shared\desktop\image-best-gear.jpg"></img>
+          <img
+            className="about-tablet"
+            src="\images\shared\tablet\image-best-gear.jpg"
+          ></img>
+          <img
+            className="about-desktop"
+            src="\images\shared\desktop\image-best-gear.jpg"
+          ></img>
+          <img
+            className="about-mobile"
+            src="\images\shared\desktop\image-best-gear.jpg"
+          ></img>
         </div>
       </div>
       <footer>
@@ -125,12 +149,14 @@ export default function Landing() {
               devoted to helping you get the most out of personal audio. Come
               and visit our demo facility - we’re open 7 days a week.
             </p>
+          </div>
+          <div className="socials-container">
+            <h2>Copyright 2021 All Rights Reserved</h2>
             <div className="socials">
               <img src="\images\shared\desktop\icon-facebook.svg"></img>
               <img src="\images\shared\desktop\icon-twitter.svg"></img>
               <img src="\images\shared\desktop\icon-instagram.svg"></img>
             </div>
-            <h2>Copyright 2021 All Rights Reserved</h2>
           </div>
         </div>
       </footer>
