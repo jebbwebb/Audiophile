@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import Footer from './Footer';
 import Navbar from './Navbar';
 
 export default function Earphones() {
@@ -12,8 +13,8 @@ export default function Earphones() {
   return (
     <>
       <div className="main-container">
+        <Navbar></Navbar>
         <div className="headphone-container">
-          <Navbar></Navbar>
           <div className="headphone-text">
             <h2>EARPHONES</h2>
           </div>
@@ -24,6 +25,14 @@ export default function Earphones() {
           <img
             className="headphonesproduct-image"
             src="images\product-yx1-earphones\desktop\image-category-page-preview.jpg"
+          ></img>
+          <img
+            className="headphonesproduct-tablet"
+            src="images\product-yx1-earphones\tablet\image-category-page-preview.jpg"
+          ></img>
+          <img
+            className="headphonesproduct-mobile"
+            src="images\product-yx1-earphones\mobile\image-category-page-preview.jpg"
           ></img>
 
           <div className="headphonesproduct-text">
@@ -94,34 +103,7 @@ export default function Earphones() {
           </div>
         </div>
       </div>
-      <footer>
-        <div className="footer-container">
-          <div className="footer-nav4">
-            <h1>audiophile</h1>
-
-            <div class="footer-menu">
-              <a href=" ">HOME</a>
-              <a href="">HEADPHONES</a>
-              <a href=" ">SPEAKERS</a>
-              <a href="">EARPHONES</a>
-            </div>
-          </div>
-          <div className="footer-text">
-            <p>
-              Audiophile is an all in one stop to fulfill your audio needs.
-              We're a small team of music lovers and sound specialists who are
-              devoted to helping you get the most out of personal audio. Come
-              and visit our demo facility - we’re open 7 days a week.
-            </p>
-            <div className="socials">
-              <img src="\images\shared\desktop\icon-facebook.svg"></img>
-              <img src="\images\shared\desktop\icon-twitter.svg"></img>
-              <img src="\images\shared\desktop\icon-instagram.svg"></img>
-            </div>
-            <h2>Copyright 2021 All Rights Reserved</h2>
-          </div>
-        </div>
-      </footer>
+      <Footer></Footer>
     </>
   );
 }

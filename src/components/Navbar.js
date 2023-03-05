@@ -32,9 +32,7 @@ export default function Navbar() {
               <a>
                 <Link to="/earphones">EARPHONES</Link>
               </a>
-              <a>
-                <Link to="/cart">EARPHONES</Link>
-              </a>
+
               <button className="cart-button" onClick={() => setIsOpen(true)}>
                 <img src="/images/shared/desktop/icon-cart.svg"></img>
               </button>

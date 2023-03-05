@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import Footer from './Footer';
 import Navbar from './Navbar';
 
 export default function Headphones() {
@@ -18,8 +19,8 @@ export default function Headphones() {
   return (
     <>
       <div className="main-container">
+        <Navbar></Navbar>
         <div className="headphone-container">
-          <Navbar></Navbar>
           <div className="headphone-text">
             <h2>HEADPHONES</h2>
           </div>
@@ -30,6 +31,14 @@ export default function Headphones() {
           <img
             className="headphonesproduct-image"
             src="images\product-xx99-mark-two-headphones\desktop\image-category-page-preview.jpg"
+          ></img>
+          <img
+            className="headphonesproduct-tablet"
+            src="images\product-xx99-mark-two-headphones\tablet\image-category-page-preview.jpg"
+          ></img>
+          <img
+            className="headphonesproduct-mobile"
+            src="images\product-xx99-mark-two-headphones\mobile\image-category-page-preview.jpg"
           ></img>
 
           <div className="headphonesproduct-text">
@@ -46,8 +55,15 @@ export default function Headphones() {
           </div>
         </div>
         <div className="headphones-product">
+          <img
+            className="headphonesproduct2-tablet"
+            src="\images\product-xx99-mark-one-headphones\tablet\image-category-page-preview.jpg"
+          ></img>
+          <img
+            className="headphonesproduct-mobile"
+            src="\images\product-xx99-mark-one-headphones\mobile\image-category-page-preview.jpg"
+          ></img>
           <div className="headphonesproduct-text">
-            <h2>N E W &nbsp; P R O D U C T</h2>
             <h1>
               XX99 MARK I <br></br>HEADPHONES
             </h1>
@@ -70,9 +86,16 @@ export default function Headphones() {
             className="headphonesproduct-image"
             src="\images\product-xx59-headphones\desktop\image-category-page-preview.jpg"
           ></img>
+          <img
+            className="headphonesproduct-tablet"
+            src="\images\product-xx59-headphones\tablet\image-category-page-preview.jpg"
+          ></img>
+          <img
+            className="headphonesproduct-mobile"
+            src="\images\product-xx59-headphones\mobile\image-category-page-preview.jpg"
+          ></img>
 
           <div className="headphonesproduct-text">
-            <h2>N E W &nbsp; P R O D U C T</h2>
             <h1>
               XX59 <br></br>HEADPHONES
             </h1>
@@ -137,34 +160,7 @@ export default function Headphones() {
           </div>
         </div>
       </div>
-      <footer>
-        <div className="footer-container">
-          <div className="footer-nav2">
-            <h1>audiophile</h1>
-
-            <div class="footer-menu">
-              <a href=" ">HOME</a>
-              <a href="">HEADPHONES</a>
-              <a href=" ">SPEAKERS</a>
-              <a href="">EARPHONES</a>
-            </div>
-          </div>
-          <div className="footer-text">
-            <p>
-              Audiophile is an all in one stop to fulfill your audio needs.
-              We're a small team of music lovers and sound specialists who are
-              devoted to helping you get the most out of personal audio. Come
-              and visit our demo facility - we’re open 7 days a week.
-            </p>
-            <div className="socials">
-              <img src="\images\shared\desktop\icon-facebook.svg"></img>
-              <img src="\images\shared\desktop\icon-twitter.svg"></img>
-              <img src="\images\shared\desktop\icon-instagram.svg"></img>
-            </div>
-            <h2>Copyright 2021 All Rights Reserved</h2>
-          </div>
-        </div>
-      </footer>
+      <Footer></Footer>
     </>
   );
 }
