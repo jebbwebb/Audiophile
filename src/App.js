@@ -35,7 +35,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/home" element={<Landing></Landing>}></Route>
+        <Route path="/" element={<Landing></Landing>}></Route>
         <Route path="/headphones" element={<Headphones></Headphones>}></Route>
         <Route path="/speakers" element={<Speakers></Speakers>}></Route>
         <Route path="/earphones" element={<Earphones></Earphones>}></Route>

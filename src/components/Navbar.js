@@ -21,7 +21,7 @@ export default function Navbar() {
 
             <div class="menu">
               <a>
-                <Link to="/home">HOME</Link>
+                <Link to="/">HOME</Link>
               </a>
               <a>
                 <Link to="/headphones">HEADPHONES</Link>
