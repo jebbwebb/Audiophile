@@ -57,6 +57,9 @@ main {
   margin-right: 660px;
   padding-top: 150px;
 }
+.mobilebar-container {
+  display: none;
+}
 
 .product-text {
   width: 398px;
@@ -229,6 +232,9 @@ main {
   font-weight: 500;
   font-size: 15px;
   line-height: 25px;
+}
+.mobile-products {
+  display: none;
 }
 .zx9-text button {
   width: 164px;
@@ -1391,6 +1397,42 @@ footer {
 
 /* Media Query Speaker Tablet */
 @media (max-width: 1110px) {
+  .productbar-mobile {
+    background-color: white;
+    height: 327px;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+  }
+  .mobileproduct-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile-products {
+    width: 350px;
+    margin-top: 100px;
+    height: 169px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+    background-color: rgb(241, 241, 241);
+    border-radius: 8px;
+  }
+  .mobile-products img {
+    width: 150.95px;
+    height: 160px;
+    object-fit: cover;
+    position: relative;
+  }
+  .mobilebar-container h1 {
+    font-size: 50px;
+  }
   .also-desktop {
     display: none;
   }
@@ -1476,6 +1518,17 @@ footer {
   .also-bar {
     flex-direction: column;
   }
+  .mobileproduct-bar {
+    flex-direction: column;
+  }
+  .productbar-mobile {
+    background-color: white;
+    height: 900px;
+  }
+  .mobile-products {
+    width: 450px;
+    height: 217px;
+  }
 }
 
 @media (max-width: 680px) {
@@ -1555,6 +1608,11 @@ footer {
   }
   .also-tablet {
     display: none;
+  }
+  .mobile-products {
+    width: 90%;
+    height: 217px;
+    margin-left: 10px;
   }
 }
 @media (max-width: 445px) {

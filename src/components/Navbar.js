@@ -29,7 +29,7 @@ export default function Navbar() {
               <span></span>
               <span></span>
             </button>
-            {ismobile && <Mobilebar></Mobilebar>}
+
             <h1>audiophile</h1>
 
             <div class="menu">
@@ -67,6 +67,7 @@ export default function Navbar() {
           menuRef={menuRef}
         ></Emptycart>
       )}
+      {ismobile && <Mobilebar></Mobilebar>}
     </>
   );
 }
