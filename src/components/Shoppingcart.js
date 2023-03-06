@@ -116,6 +116,13 @@ export default function Shoppingcart({ open, onClose, menuRef }) {
             })}
           </h1>
         </div>
+        <button
+          onClick={() => {
+            onClose();
+          }}
+        >
+          asdasdasd
+        </button>
       </div>
     </>
   );

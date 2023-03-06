@@ -14,7 +14,6 @@ export default function Navbar() {
 
   let menuRef = useRef();
   const handleMobile = () => {
-    console.log('y');
     return <Mobilebar></Mobilebar>;
   };
 
@@ -24,7 +23,7 @@ export default function Navbar() {
         {' '}
         <div className="nav-container">
           <div className="nav">
-            <button class="hamburger" onClick={() => setIsMobile(!ismobile)}>
+            <button class="hamburger" onClick={() => setIsMobile(true)}>
               <span></span>
               <span></span>
               <span></span>
@@ -67,7 +66,13 @@ export default function Navbar() {
           menuRef={menuRef}
         ></Emptycart>
       )}
-      {ismobile && <Mobilebar></Mobilebar>}
+      {ismobile && (
+        <Mobilebar
+          open={ismobile}
+          onClose={() => setIsMobile(false)}
+          menuRef={menuRef}
+        ></Mobilebar>
+      )}
     </>
   );
 }
