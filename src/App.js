@@ -9,6 +9,7 @@ import Xx59 from './components/Xx59';
 import Zx9 from './components/Zx9';
 import Zx7 from './components/Zx7';
 import Yx1 from './components/Yx1';
+import ScrollToTop from './components/scrollToTop';
 
 import { HashRouter, Route, Routes } from 'react-router-dom';
 import { useEffect, useState } from 'react';

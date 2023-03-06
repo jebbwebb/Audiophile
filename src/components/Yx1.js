@@ -5,6 +5,8 @@ import { useNavigate } from 'react-router-dom';
 import { addItem, updateQuanity, lowerQuanity } from './counter';
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
+import Footer from './Footer';
+import Productbar from './Productbar';
 export default function Yx1(productData) {
   const navigate = useNavigate();
   const handleZx9 = () => {
@@ -47,10 +49,21 @@ export default function Yx1(productData) {
         </div>
       </div>
 
-      <div className="headphones-product">
+      <div className="headphonespage-product">
         <img
-          className="headphonesproduct-image"
-          src="images\product-xx99-mark-two-headphones\desktop\image-category-page-preview.jpg"
+          className="productpage-image"
+          src="images\product-yx1-earphones\desktop\image-category-page-preview.jpg"
+        ></img>
+
+        <div className="productimage-tablet">
+          <img
+            className="productpage-tablet"
+            src="\images/product-yx1-earphones\tablet\image-product.jpg"
+          ></img>
+        </div>
+        <img
+          className="productpage-mobile"
+          src="images\product-yx1-earphones\mobile\image-category-page-preview.jpg"
         ></img>
 
         <div className="headphonesproduct-text">
@@ -129,11 +142,44 @@ export default function Yx1(productData) {
       </div>
       <div className="page-images">
         <div className="col-image">
-          <img src="images\product-yx1-earphones\desktop\image-gallery-1.jpg"></img>
-          <img src="images\product-yx1-earphones\desktop\image-gallery-2.jpg"></img>
+          <img
+            className="col-desktop"
+            src="images\product-yx1-earphones\desktop\image-gallery-1.jpg"
+          ></img>
+          <img
+            className="col-desktop"
+            src="images\product-yx1-earphones\desktop\image-gallery-2.jpg"
+          ></img>
+          <img
+            className="col-tablet"
+            src="images\product-yx1-earphones\tablet\image-gallery-1.jpg"
+          ></img>
+          <img
+            className="col-tablet"
+            src="images\product-yx1-earphones\tablet\image-gallery-2.jpg"
+          ></img>
+          <img
+            className="col-mobile"
+            src="images\product-yx1-earphones\mobile\image-gallery-1.jpg"
+          ></img>
+          <img
+            className="col-mobile"
+            src="images\product-yx1-earphones\mobile\image-gallery-2.jpg"
+          ></img>
         </div>
         <div className="row-image">
-          <img src="images\product-yx1-earphones\desktop\image-gallery-3.jpg"></img>
+          <img
+            className="row-desktop"
+            src="images\product-yx1-earphones\desktop\image-gallery-3.jpg"
+          ></img>
+          <img
+            className="row-tablet"
+            src="images\product-yx1-earphones\tablet\image-gallery-3.jpg"
+          ></img>
+          <img
+            className="row-mobile"
+            src="images\product-yx1-earphones\mobile\image-gallery-3.jpg"
+          ></img>
         </div>
       </div>
       <div className="may-also">
@@ -158,40 +204,7 @@ export default function Yx1(productData) {
           </div>
         </div>
       </div>
-
-      <div className="product-bar">
-        <div className="products">
-          <img src="/images/shared\desktop/image-category-thumbnail-headphones.png"></img>
-          <div className="products-text">
-            <h1>HEADPHONES</h1>
-            <a>
-              <Link to="/headphones">SHOP&nbsp;></Link>
-            </a>
-          </div>
-        </div>
-        <div className="products">
-          <div className="products-text">
-            <img src="/images\shared/desktop/image-category-thumbnail-speakers.png"></img>
-            <h1>SPEAKERS</h1>
-            <a>
-              <Link to="/speakers">SHOP&nbsp;></Link>
-            </a>
-          </div>
-        </div>
-        <div className="products">
-          <div className="products-text">
-            <img
-              src="/images/shared/desktop/image-category-thumbnail-earphones.png"
-              alt=""
-            ></img>
-            <h1>EARPHONES</h1>
-
-            <a>
-              <Link to="/earphones">SHOP&nbsp;></Link>
-            </a>
-          </div>
-        </div>
-      </div>
+      <Productbar></Productbar>
       <div className="about-container">
         <div className="about-text">
           <h1>
@@ -210,34 +223,7 @@ export default function Yx1(productData) {
           <img src="\images\shared\desktop\image-best-gear.jpg"></img>
         </div>
       </div>
-      <footer>
-        <div className="footer-container">
-          <div className="footer-nav5">
-            <h1>audiophile</h1>
-
-            <div class="footer-menu">
-              <a href=" ">HOME</a>
-              <a href="">HEADPHONES</a>
-              <a href=" ">SPEAKERS</a>
-              <a href="">EARPHONES</a>
-            </div>
-          </div>
-          <div className="footer-text">
-            <p>
-              Audiophile is an all in one stop to fulfill your audio needs.
-              We're a small team of music lovers and sound specialists who are
-              devoted to helping you get the most out of personal audio. Come
-              and visit our demo facility - we’re open 7 days a week.
-            </p>
-            <div className="socials">
-              <img src="\images\shared\desktop\icon-facebook.svg"></img>
-              <img src="\images\shared\desktop\icon-twitter.svg"></img>
-              <img src="\images\shared\desktop\icon-instagram.svg"></img>
-            </div>
-            <h2>Copyright 2021 All Rights Reserved</h2>
-          </div>
-        </div>
-      </footer>
+      <Footer></Footer>
     </>
   );
 }

@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
 import Navbar from './Navbar';
-
+import Productbar from './Productbar';
 export default function Headphones() {
   const navigate = useNavigate();
 
@@ -107,39 +107,7 @@ export default function Headphones() {
             <button onClick={handleXx59}>SEE PRODUCT</button>
           </div>
         </div>
-        <div className="product-bar">
-          <div className="products">
-            <img src="/images/shared\desktop/image-category-thumbnail-headphones.png"></img>
-            <div className="products-text">
-              <h1>HEADPHONES</h1>
-              <a>
-                <Link to="/headphones">SHOP&nbsp;></Link>
-              </a>
-            </div>
-          </div>
-          <div className="products">
-            <div className="products-text">
-              <img src="/images\shared/desktop/image-category-thumbnail-speakers.png"></img>
-              <h1>SPEAKERS</h1>
-              <a>
-                <Link to="/speakers">SHOP&nbsp;></Link>
-              </a>
-            </div>
-          </div>
-          <div className="products">
-            <div className="products-text">
-              <img
-                src="/images/shared/desktop/image-category-thumbnail-earphones.png"
-                alt=""
-              ></img>
-              <h1>EARPHONES</h1>
-
-              <a>
-                <Link to="/earphones">SHOP&nbsp;></Link>
-              </a>
-            </div>
-          </div>
-        </div>
+        <Productbar></Productbar>
         <div className="about-container">
           <div className="about-text">
             <h1>

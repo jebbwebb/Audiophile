@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { addItem, updateQuanity, lowerQuanity } from './counter';
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
-
+import Footer from './Footer';
 export default function Zx9(productData) {
   const navigate = useNavigate();
   const handleZx7 = () => {
@@ -48,10 +48,21 @@ export default function Zx9(productData) {
         </div>
       </div>
 
-      <div className="headphones-product">
+      <div className="headphonespage-product">
         <img
-          className="headphonesproduct-image"
+          className="productpage-image"
           src="images\product-zx9-speaker\desktop\image-category-page-preview.jpg"
+        ></img>
+
+        <div className="productimage-tablet">
+          <img
+            className="productpage-tablet"
+            src="\images/product-zx9-speaker\tablet\image-product.jpg"
+          ></img>
+        </div>
+        <img
+          className="productpage-mobile"
+          src="images\product-zx9-speaker\mobile\image-category-page-preview.jpg"
         ></img>
 
         <div className="headphonesproduct-text">
@@ -108,22 +119,93 @@ export default function Zx9(productData) {
             from old songs since it can respond to even the subtle waveforms.
           </p>
         </div>
+        <div className="thebox-tablet">
+          <div className="thebox-container">
+            <div className="inthebox">
+              <h1>IN THE BOX</h1>
+            </div>
+            <div className="box-tablet">
+              <div className="box-item">
+                <p>1x &nbsp; Speaker Unit</p>
+              </div>
+              <div className="box-item">
+                <p>2x &nbsp;Speaker Cloth Panel</p>
+              </div>
+              <div className="box-item">
+                <p>1x &nbsp;User Manual</p>
+              </div>
+              <div className="box-item">
+                <p>1x &nbsp;3.5mm 10m Audio Cable</p>
+              </div>
+              <div className="box-item">
+                <p>1x &nbsp; 10m Optical Cable</p>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="the-box">
-          <h1>IN THE BOX</h1>
-          <p>2x &nbsp; Speaker Unit</p>
-          <p>2x &nbsp;Speaker Cloth Panel</p>
-          <p>1x &nbsp;User Manual</p>
-          <p>1x &nbsp;3.5mm 10m Audio Cable</p>
-          <p>1x &nbsp; 10m Optical Cable</p>
+          <div className="inthebox">
+            <h1>IN THE BOX</h1>
+          </div>
+          <div className="box">
+            <div className="box-item">
+              <p>1x &nbsp; Speaker Unit</p>
+            </div>
+            <div className="box-item">
+              <p>2x &nbsp;Speaker Cloth Panel</p>
+            </div>
+            <div className="box-item">
+              <p>1x &nbsp;User Manual</p>
+            </div>
+            <div className="box-item">
+              <p>1x &nbsp;3.5mm 10m Audio Cable</p>
+            </div>
+            <div className="box-item">
+              <p>1x &nbsp; 10m Optical Cable</p>
+            </div>
+          </div>
         </div>
       </div>
       <div className="page-images">
         <div className="col-image">
-          <img src="images\product-zx9-speaker\desktop\image-gallery-1.jpg"></img>
-          <img src="images\product-zx9-speaker\desktop\image-gallery-2.jpg"></img>
+          <img
+            className="col-desktop"
+            src="images\product-zx9-speaker\desktop\image-gallery-1.jpg"
+          ></img>
+          <img
+            className="col-desktop"
+            src="images\product-zx9-speaker\desktop\image-gallery-2.jpg"
+          ></img>
+          <img
+            className="col-tablet"
+            src="images\product-zx9-speaker\tablet\image-gallery-1.jpg"
+          ></img>
+          <img
+            className="col-tablet"
+            src="images\product-zx9-speaker\tablet\image-gallery-2.jpg"
+          ></img>
+          <img
+            className="col-mobile"
+            src="images\product-zx9-speaker\mobile\image-gallery-1.jpg"
+          ></img>
+          <img
+            className="col-mobile"
+            src="images\product-zx9-speaker\mobile\image-gallery-2.jpg"
+          ></img>
         </div>
         <div className="row-image">
-          <img src="images\product-zx9-speaker\desktop\image-gallery-3.jpg"></img>
+          <img
+            className="row-desktop"
+            src="images\product-zx9-speaker\desktop\image-gallery-3.jpg"
+          ></img>
+          <img
+            className="row-tablet"
+            src="images\product-zx9-speaker\tablet\image-gallery-3.jpg"
+          ></img>
+          <img
+            className="row-mobile"
+            src="images\product-zx9-speaker\mobile\image-gallery-3.jpg"
+          ></img>
         </div>
       </div>
       <div className="may-also">
@@ -200,34 +282,7 @@ export default function Zx9(productData) {
           <img src="\images\shared\desktop\image-best-gear.jpg"></img>
         </div>
       </div>
-      <footer>
-        <div className="footer-container">
-          <div className="footer-nav5">
-            <h1>audiophile</h1>
-
-            <div class="footer-menu">
-              <a href=" ">HOME</a>
-              <a href="">HEADPHONES</a>
-              <a href=" ">SPEAKERS</a>
-              <a href="">EARPHONES</a>
-            </div>
-          </div>
-          <div className="footer-text">
-            <p>
-              Audiophile is an all in one stop to fulfill your audio needs.
-              We're a small team of music lovers and sound specialists who are
-              devoted to helping you get the most out of personal audio. Come
-              and visit our demo facility - we’re open 7 days a week.
-            </p>
-            <div className="socials">
-              <img src="\images\shared\desktop\icon-facebook.svg"></img>
-              <img src="\images\shared\desktop\icon-twitter.svg"></img>
-              <img src="\images\shared\desktop\icon-instagram.svg"></img>
-            </div>
-            <h2>Copyright 2021 All Rights Reserved</h2>
-          </div>
-        </div>
-      </footer>
+      <Footer></Footer>
     </>
   );
 }

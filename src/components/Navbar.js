@@ -5,11 +5,18 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import Shoppingcart from './Shoppingcart';
 import Emptycart from './Emptycart';
+import Mobilebar from './Mobilebar';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [ismobile, setIsMobile] = useState(false);
   const cartItems = useSelector((state) => state.counter.items);
+
   let menuRef = useRef();
+  const handleMobile = () => {
+    console.log('y');
+    return <Mobilebar></Mobilebar>;
+  };
 
   return (
     <>
@@ -17,6 +24,12 @@ export default function Navbar() {
         {' '}
         <div className="nav-container">
           <div className="nav">
+            <button class="hamburger" onClick={() => setIsMobile(!ismobile)}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            {ismobile && <Mobilebar></Mobilebar>}
             <h1>audiophile</h1>
 
             <div class="menu">
@@ -32,7 +45,8 @@ export default function Navbar() {
               <a>
                 <Link to="/earphones">EARPHONES</Link>
               </a>
-
+            </div>
+            <div className="cart-icon">
               <button className="cart-button" onClick={() => setIsOpen(true)}>
                 <img src="/images/shared/desktop/icon-cart.svg"></img>
               </button>
