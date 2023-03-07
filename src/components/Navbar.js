@@ -29,7 +29,11 @@ export default function Navbar() {
               <span></span>
             </button>
 
-            <h1>audiophile</h1>
+            <a>
+              <Link to="/">
+                <h1>audiophile</h1>
+              </Link>
+            </a>
 
             <div class="menu">
               <a>

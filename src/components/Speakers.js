@@ -48,7 +48,9 @@ export default function () {
               connectivity -- creating new possibilities for more pleasing and
               practical audio setups.
             </p>
-            <button onClick={handleZx9}>SEE PRODUCT</button>
+            <button className="product-button" onClick={handleZx9}>
+              SEE PRODUCT
+            </button>
           </div>
         </div>
         <div className="headphones-product">
@@ -67,7 +69,9 @@ export default function () {
               ZX7 speaker uses high-end audiophile components that represents
               the top of the line powered speakers for home or studio use.
             </p>
-            <button onClick={handleZx7}>SEE PRODUCT</button>
+            <button className="product-button" onClick={handleZx7}>
+              SEE PRODUCT
+            </button>
           </div>
 
           <img

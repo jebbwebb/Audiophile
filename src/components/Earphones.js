@@ -46,7 +46,9 @@ export default function Earphones() {
               sound even in noisy environments with its active noise
               cancellation feature.
             </p>
-            <button onClick={handleYx1}>SEE PRODUCT</button>
+            <button className="product-button" onClick={handleYx1}>
+              SEE PRODUCT
+            </button>
           </div>
         </div>
 

@@ -99,7 +99,9 @@ export default function Yx1(productData) {
               </button>
             </div>
 
-            <button onClick={handleAddItem}>ADD TO CART</button>
+            <button className="add-cart" onClick={handleAddItem}>
+              ADD TO CART
+            </button>
           </div>
         </div>
       </div>

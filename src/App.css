@@ -6,19 +6,11 @@ body,
 html {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 
 /* Landing Page */
-.modal-body {
-  position: 'fixed';
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 1000;
-  max-height: 100;
-}
+
 .landing-container {
   width: 1440px;
   height: 708px;
@@ -94,6 +86,10 @@ main {
   letter-spacing: 5.5px;
   line-height: 19px;
   color: rgb(140, 140, 140);
+}
+a {
+  border: none;
+  text-decoration: none;
 }
 .product-text p {
   font-family: 'Manrope', sans-serif;
@@ -249,6 +245,7 @@ main {
   height: 43px;
   background-color: #000000;
   color: white;
+  border: none;
 }
 .zx9-text h1 {
   font-size: 56px;
@@ -302,6 +299,7 @@ main {
   height: 48px;
   background-color: transparent;
   font-family: 'Manrope', sans-serif;
+  border: 1px solid black;
 }
 .mobile-zx7 {
   display: none;
@@ -467,7 +465,23 @@ footer {
   line-height: 25px;
   font-size: 15px;
 }
-
+.product-button {
+  width: 160px;
+  height: 48px;
+  background-color: #d87d4a;
+  border: none;
+  color: white;
+  font-family: 'Manrope', sans-serif;
+}
+.products-text span {
+  color: #d87d4a;
+  font-family: 'Manrope', sans-serif;
+}
+.products-text a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Manrope', sans-serif;
+}
 .socials-container {
   display: flex;
   justify-content: space-between;
@@ -476,6 +490,21 @@ footer {
 }
 .socials-container h2 {
   font-size: 16px;
+  color: white;
+}
+.add-cart {
+  width: 160px;
+  height: 48px;
+  font-family: 'Manrope', sans-serif;
+  background-color: #d87d4a;
+  color: white;
+  border: none;
+}
+.quanity-container button {
+  border: none;
+}
+.cart-quanity button {
+  border: none;
 }
 .socials {
   width: 120px;
@@ -500,17 +529,9 @@ footer {
 .main-container {
   width: 100%;
   background-color: rgb(25, 25, 25);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .headphone-container {
-  width: 1440px;
   height: 336px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .headphone-container h2 {
@@ -782,9 +803,15 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.quanity button {
+  background-color: rebeccapurple;
+}
+
 .button-container {
   display: flex;
   gap: 16px;
+}
+.button-container button {
 }
 .the-box {
   display: flex;
@@ -928,6 +955,10 @@ footer {
   background-color: white;
   border-radius: 10px;
 }
+.footer-menu a {
+  text-align: center;
+}
+
 .top-bar {
   display: flex;
   justify-content: space-between;
@@ -944,7 +975,16 @@ footer {
 .top-bar button {
   width: 76px;
   background-color: transparent;
-  color: #d87d4a;
+  color: gray;
+  border: none;
+}
+.also-product button {
+  width: 160px;
+  height: 48px;
+  background-color: #d87d4a;
+  border: none;
+  color: white;
+  font-family: 'Manrope', sans-serif;
 }
 .cart-total {
   display: flex;
@@ -1245,6 +1285,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-left: 25px;
   }
   .footer-menu a {
     padding-bottom: 16px;
@@ -1286,8 +1327,10 @@ footer {
     justify-content: center;
     align-items: center;
   }
+
   .products {
-    margin-top: 50px;
+    width: 300px;
+    margin-top: 80px;
   }
   .tablet-zx7 {
     display: none;
@@ -1408,7 +1451,7 @@ footer {
   .productbar-mobile {
     background-color: white;
     height: 327px;
-    position: absolute;
+    position: relative;
     z-index: 1000;
     width: 100%;
   }
@@ -1635,6 +1678,16 @@ footer {
   }
 }
 @media (max-width: 445px) {
+  .text {
+    margin-right: 20px;
+    text-align: center;
+  }
+  .text h1 {
+    font-size: 45px;
+  }
+  .text p {
+    font-size: 15px;
+  }
   .nav h1 {
     padding-right: 0px;
   }
@@ -1643,7 +1696,7 @@ footer {
   }
   .cart-container {
     width: 327px;
-    right: 2%;
+    right: 5%;
   }
 
   .products-text {

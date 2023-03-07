@@ -6,6 +6,7 @@ import { addItem, updateQuanity, lowerQuanity } from './counter';
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import Productbar from './Productbar';
 export default function Zx9(productData) {
   const navigate = useNavigate();
   const handleZx7 = () => {
@@ -98,7 +99,9 @@ export default function Zx9(productData) {
               </button>
             </div>
 
-            <button onClick={handleAddItem}>ADD TO CART</button>
+            <button className="add-cart" onClick={handleAddItem}>
+              ADD TO CART
+            </button>
           </div>
         </div>
       </div>
@@ -231,39 +234,7 @@ export default function Zx9(productData) {
         </div>
       </div>
 
-      <div className="product-bar">
-        <div className="products">
-          <img src="/images/shared\desktop/image-category-thumbnail-headphones.png"></img>
-          <div className="products-text">
-            <h1>HEADPHONES</h1>
-            <a>
-              <Link to="/headphones">SHOP&nbsp;></Link>
-            </a>
-          </div>
-        </div>
-        <div className="products">
-          <div className="products-text">
-            <img src="/images\shared/desktop/image-category-thumbnail-speakers.png"></img>
-            <h1>SPEAKERS</h1>
-            <a>
-              <Link to="/speakers">SHOP&nbsp;></Link>
-            </a>
-          </div>
-        </div>
-        <div className="products">
-          <div className="products-text">
-            <img
-              src="/images/shared/desktop/image-category-thumbnail-earphones.png"
-              alt=""
-            ></img>
-            <h1>EARPHONES</h1>
-
-            <a>
-              <Link to="/earphones">SHOP&nbsp;></Link>
-            </a>
-          </div>
-        </div>
-      </div>
+      <Productbar></Productbar>
       <div className="about-container">
         <div className="about-text">
           <h1>

@@ -51,7 +51,9 @@ export default function Headphones() {
               It redefines your premium headphone experience by reproducing the
               balanced depth and precision of studio-quality sound.
             </p>
-            <button onClick={handleXx99m2}>SEE PRODUCT</button>
+            <button className="product-button" onClick={handleXx99m2}>
+              SEE PRODUCT
+            </button>
           </div>
         </div>
         <div className="headphones-product">
@@ -73,7 +75,9 @@ export default function Headphones() {
               mixing engineers, and music aficionados alike in studios and on
               the go.
             </p>
-            <button onClick={handleXx99}>SEE PRODUCT</button>
+            <button className="product-button" onClick={handleXx99}>
+              SEE PRODUCT
+            </button>
           </div>
 
           <img
@@ -104,7 +108,9 @@ export default function Headphones() {
               It redefines your premium headphone experience by reproducing the
               balanced depth and precision of studio-quality sound.
             </p>
-            <button onClick={handleXx59}>SEE PRODUCT</button>
+            <button className="product-button" onClick={handleXx59}>
+              SEE PRODUCT
+            </button>
           </div>
         </div>
         <Productbar></Productbar>

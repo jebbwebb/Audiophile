@@ -1,7 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { addItem, updateQuanity, lowerQuanity } from './counter';
+import {
+  addItem,
+  updateQuanity,
+  lowerQuanity,
+  removeAllItems,
+} from './counter';
 import Emptycart from './Emptycart';
 
 export default function Shoppingcart({ open, onClose, menuRef }) {
@@ -41,6 +46,10 @@ export default function Shoppingcart({ open, onClose, menuRef }) {
   useEffect(() => {
     getData();
   }, []);
+  const handleRemove = () => {
+    dispatch(removeAllItems());
+    console.log('y');
+  };
   const dispatch = useDispatch();
   const cartItems = useSelector((state) => state.counter.items);
   const cartId = useSelector((state) => state.counter.items.id);
@@ -62,7 +71,7 @@ export default function Shoppingcart({ open, onClose, menuRef }) {
       <div className="cart-container">
         <div className="top-bar">
           <h1>Cart ({cartItems.length})</h1>
-          <button>Remove All</button>
+          <button onClick={handleRemove}>Remove All</button>
         </div>
         <div>
           <div className="cart-section">
@@ -116,13 +125,6 @@ export default function Shoppingcart({ open, onClose, menuRef }) {
             })}
           </h1>
         </div>
-        <button
-          onClick={() => {
-            onClose();
-          }}
-        >
-          asdasdasd
-        </button>
       </div>
     </>
   );

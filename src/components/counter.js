@@ -46,9 +46,13 @@ export const counterSlice = createSlice({
         state.items.splice(index, 1);
       }
     },
+    removeAllItems: (state) => {
+      state.items = [];
+    },
   },
 });
 
-export const { addItem, updateQuanity, lowerQuanity } = counterSlice.actions;
+export const { addItem, updateQuanity, lowerQuanity, removeAllItems } =
+  counterSlice.actions;
 
 export default counterSlice.reducer;

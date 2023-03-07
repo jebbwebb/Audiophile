@@ -3,8 +3,23 @@ import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import Productbar from './Productbar';
+import { useNavigate } from 'react-router-dom';
 
 export default function Landing() {
+  const navigate = useNavigate();
+
+  const handleXx99m2 = () => {
+    navigate('/xx99m2');
+  };
+  const handleZx9 = () => {
+    navigate('/zx9');
+  };
+  const handleYx1 = () => {
+    navigate('yx1');
+  };
+  const handleZx7 = () => {
+    navigate('/zx7');
+  };
   return (
     <>
       <main>
@@ -21,7 +36,7 @@ export default function Landing() {
                   Experience natural, lifelike audio and exceptional build
                   quality made for the passionate music enthusiast.
                 </p>
-                <button>SEE PRODUCT</button>
+                <button onClick={handleXx99m2}>SEE PRODUCT</button>
               </div>
             </div>
           </div>
@@ -42,7 +57,7 @@ export default function Landing() {
               Upgrade to premium speakers that are phenomenally built to deliver
               truly remarkable sound.
             </p>
-            <button>SEE PRODUCT</button>
+            <button onClick={handleZx9}>SEE PRODUCT</button>
           </div>
         </div>
       </div>
@@ -50,7 +65,7 @@ export default function Landing() {
         <div className="zx7-speaker">
           <div className="zx7-text">
             <h1>ZX7 SPEAKER</h1>
-            <button>SEE PRODUCT</button>
+            <button onClick={handleZx7}>SEE PRODUCT</button>
           </div>
           <img
             className="tablet-zx7"
@@ -75,7 +90,7 @@ export default function Landing() {
         </div>
         <div className="yx1-text">
           <h1>YX1 EARPHONES</h1>
-          <button>SEE PRODUCT</button>
+          <button onClick={handleYx1}>SEE PRODUCT</button>
         </div>
       </div>
       <div className="about-container">
