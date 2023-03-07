@@ -79,26 +79,6 @@ export default function Yx1(productData) {
           </p>
           <h3>$599</h3>
           <div className="button-container">
-            <div className="quanity-container">
-              <button
-                onClick={() =>
-                  handleLowerQuantity(1, productData.productData.price)
-                }
-                className="quanity"
-              >
-                -
-              </button>
-              <span>1</span>
-              <button
-                onClick={() =>
-                  handleUpdateQuantity(1, productData.productData.price)
-                }
-                className="quanity"
-              >
-                +
-              </button>
-            </div>
-
             <button className="add-cart" onClick={handleAddItem}>
               ADD TO CART
             </button>

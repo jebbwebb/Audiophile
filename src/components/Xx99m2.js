@@ -10,8 +10,10 @@ import Productbar from './Productbar';
 
 export default function Xx99m2(productData) {
   console.log(productData.productData);
+  const [quanity, setIsQuanity] = useState(1);
   const dispatch = useDispatch();
   const cartItems = useSelector((state) => state.counter.items);
+  const cartId = useSelector((state) => state.counter.items.id);
 
   const navigate = useNavigate();
   const handleZx9 = () => {
@@ -34,6 +36,12 @@ export default function Xx99m2(productData) {
         quantity: 1,
       })
     );
+  };
+  const handleQuanity = () => {
+    setIsQuanity(quanity + 1);
+  };
+  const handleLessQuanity = () => {
+    setIsQuanity(quanity - 1);
   };
 
   const handleUpdateQuantity = (id, price) => {
@@ -77,26 +85,6 @@ export default function Xx99m2(productData) {
           </p>
           <h3>$2,999</h3>
           <div className="button-container">
-            <div className="quanity-container">
-              <button
-                onClick={() =>
-                  handleLowerQuantity(4, productData.productData.price)
-                }
-                className="quanity"
-              >
-                -
-              </button>
-              <span>1</span>
-              <button
-                onClick={() =>
-                  handleUpdateQuantity(4, productData.productData.price)
-                }
-                className="quanity"
-              >
-                +
-              </button>
-            </div>
-
             <button className="add-cart" onClick={handleAddItem}>
               ADD TO CART
             </button>

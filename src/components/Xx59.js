@@ -42,10 +42,8 @@ export default function Xx59(productData) {
   };
   return (
     <>
-      <div className="main-container">
-        <div className="page-container">
-          <Navbar></Navbar>
-        </div>
+      <div className="page-container">
+        <Navbar></Navbar>
       </div>
 
       <div className="headphonespage-product">
@@ -77,26 +75,6 @@ export default function Xx59(productData) {
           <h3>$899</h3>
 
           <div className="button-container">
-            <div className="quanity-container">
-              <button
-                onClick={() =>
-                  handleLowerQuantity(3, productData.productData.price)
-                }
-                className="quanity"
-              >
-                -
-              </button>
-              <span>1</span>
-              <button
-                onClick={() =>
-                  handleUpdateQuantity(3, productData.productData.price)
-                }
-                className="quanity"
-              >
-                +
-              </button>
-            </div>
-
             <button className="add-cart" onClick={handleAddItem}>
               ADD TO CART
             </button>

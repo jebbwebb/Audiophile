@@ -80,26 +80,6 @@ export default function Zx7(productData) {
           </p>
           <h3>$4,500</h3>
           <div className="button-container">
-            <div className="quanity-container">
-              <button
-                onClick={() =>
-                  handleLowerQuantity(5, productData.productData.price)
-                }
-                className="quanity"
-              >
-                -
-              </button>
-              <span>1</span>
-              <button
-                onClick={() =>
-                  handleUpdateQuantity(5, productData.productData.price)
-                }
-                className="quanity"
-              >
-                +
-              </button>
-            </div>
-
             <button className="add-cart" onClick={handleAddItem}>
               ADD TO CART
             </button>
