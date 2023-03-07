@@ -18,7 +18,6 @@ export default function Emptycart({ open, onClose, menuRef }) {
     bottom: 0,
     backgroundColor: 'rgba(0,0,0,.7)',
     zIndex: 1000,
-    overflow: 'hidden',
   };
 
   if (!open) return null;

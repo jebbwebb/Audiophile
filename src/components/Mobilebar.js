@@ -14,12 +14,16 @@ export default function Mobilebar({ open, onClose, menuRef }) {
 
   const MODAL_STYLES = {
     position: 'fixed',
+    height: 'auto',
+    overflow: 'auto',
     top: 0,
     left: 0,
     right: 0,
     bottom: 0,
     backgroundColor: 'rgba(0,0,0,.7)',
     zIndex: 1000,
+
+    overflowY: 'scroll',
   };
   if (!open) return null;
   return (

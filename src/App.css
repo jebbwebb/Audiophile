@@ -6,11 +6,19 @@ body,
 html {
   height: 100%;
   width: 100%;
-  overflow-x: hidden;
 }
 
 /* Landing Page */
-
+.modal-body {
+  position: 'fixed';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  max-height: 100;
+}
 .landing-container {
   width: 1440px;
   height: 708px;
@@ -1400,7 +1408,7 @@ footer {
   .productbar-mobile {
     background-color: white;
     height: 327px;
-    position: fixed;
+    position: absolute;
     z-index: 1000;
     width: 100%;
   }
@@ -1523,11 +1531,21 @@ footer {
   }
   .productbar-mobile {
     background-color: white;
-    height: 1000px;
+    height: 800px;
   }
   .mobile-products {
     width: 450px;
-    height: 217px;
+    height: 167px;
+    margin-top: 60px;
+  }
+  .products-text {
+    margin-bottom: 20px;
+  }
+  .mobile-products img {
+    width: 125.95px;
+    height: 120px;
+    object-fit: cover;
+    position: relative;
   }
 }
 
@@ -1611,8 +1629,9 @@ footer {
   }
   .mobile-products {
     width: 90%;
-    height: 217px;
+
     margin-left: 10px;
+    margin-top: 50px;
   }
 }
 @media (max-width: 445px) {
@@ -1625,5 +1644,15 @@ footer {
   .cart-container {
     width: 327px;
     right: 2%;
+  }
+
+  .products-text {
+    margin-bottom: 20px;
+  }
+  .mobile-products img {
+    width: 125.95px;
+    height: 120px;
+    object-fit: cover;
+    position: relative;
   }
 }
