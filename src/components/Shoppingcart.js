@@ -54,7 +54,7 @@ export default function Shoppingcart({ open, onClose, menuRef }) {
   const cartItems = useSelector((state) => state.counter.items);
   const cartId = useSelector((state) => state.counter.items.id);
   const total = cartItems.reduce(
-    (accumulator, current) => accumulator + current.price * current.quantity,
+    (accumulator, current) => accumulator + current.price,
     0
   );
   const handleUpdateQuantity = (id, price) => {
