@@ -1331,6 +1331,7 @@ footer {
   .products {
     width: 300px;
     margin-top: 80px;
+    margin-left: 0px;
   }
   .tablet-zx7 {
     display: none;
